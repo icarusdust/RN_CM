@@ -3,6 +3,8 @@ workflows:
         name: React Native Android
         max_build_duration: 60
         instance_type: mac_mini_m1
+        environment:
+          node: v20.10.0
         cache:
            cache_paths:
                - $CM_BUILD_DIR/node_modules
